@@ -20,23 +20,23 @@ You can use following definitions in your equation:
 - Encoder's counts per revolution: $CPR$
 
 > Write down linear motion equation below. 👇
-To travel a straight-line distance \( d \), the wheel must rotate by:
+To travel a straight-line distance $d$, the wheel must rotate by:
 
-\[
+$$
 \phi = \frac{d}{r}
-\]
+$$
 
-Because the encoder measures motor-shaft rotation, and the motor is connected through a gear ratio \( i \):
+Because the encoder measures motor-shaft rotation, and the motor is connected through a gear ratio $i$:
 
-\[
+$$
 N = \frac{d}{2\pi r} \, i
-\]
+$$
 
 Convert revolutions to encoder counts:
 
-\[
+$$
 C = \frac{d}{2\pi r} \, i \, CPR
-\]
+$$
 
 > [!TIP]
 > If other quantities than the listed ones are needed.
@@ -56,29 +56,27 @@ You can use following definitions in your equation:
 - Encoder's counts per revolution: $CPR$
 
 > Write down angular motion equation(s) below. 👇
-To spin the robot by angle \( \theta \), each wheel travels an arc length:
+To spin the robot by angle $\theta$, each wheel travels an arc length:
 
-\[
+$$
 s = \frac{L}{2}\theta
-\]
+$$
 
 Left and right wheel arc lengths:
 
-\[
-s_l = -\frac{L}{2}\theta, 
-\qquad
-s_r = +\frac{L}{2}\theta
-\]
+$$
+s_l = -\frac{L}{2}\theta, \qquad s_r = +\frac{L}{2}\theta
+$$
 
 Convert to encoder counts:
 
-\[
+$$
 C_l = -\frac{L\theta}{4\pi r} \, i \, CPR
-\]
+$$
 
-\[
+$$
 C_r = +\frac{L\theta}{4\pi r} \, i \, CPR
-\]
+$$
 
 > [!TIP]
 > You may find the calculation of arc length as illustrated below helpful.
