@@ -86,7 +86,7 @@ $$
 ### 2. (15%) Wiring
 Please upload your wiring diagram below to illustrate how the motors are controlled and monitored. 👇
 
-![wiring](images/wiring_diagram.jpg)
+![wiring](images/wiring_schematic.jpg)
 
 ### 3. (70%) Coding
 
