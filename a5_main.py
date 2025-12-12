@@ -9,10 +9,10 @@ import math
 # -------------------------------------
 # Robot Constants
 # -------------------------------------
-wheel_radius = 0.0228       # meters
-gear_ratio = 98.8
+wheel_radius = 0.0235      # meters
+gear_ratio = 98.6
 CPR = 28
-axle_length = 0.122         # meters
+axle_length = 0.125         # meters
 
 # -------------------------------------
 # LED & Sensor Pin Setup
@@ -201,8 +201,8 @@ D2 = 0.50
 D3 = 0.50                     
 D4 = math.sqrt((0.75 - 0.50)**2 + 0.5**2)
 
-TURN1 = math.radians(78)        
-TURN2 = math.radians(-235)       
+TURN1 = math.radians(70)        
+TURN2 = math.radians(-225)       
 TURN3 = math.radians(57)
 TURN4 = math.radians(90)
 
@@ -250,5 +250,7 @@ stop_all()
 STBY.off()
 
 print("Trail complete.")
+
+
 
 
