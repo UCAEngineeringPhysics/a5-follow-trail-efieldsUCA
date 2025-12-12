@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/1_wnOXgh)
 # Trail Follower
 
 Implement a more precised distance control to follow the trapezoidal trail in the lab.
@@ -19,6 +20,23 @@ You can use following definitions in your equation:
 - Encoder's counts per revolution: $CPR$
 
 > Write down linear motion equation below. 👇
+To travel a straight-line distance $d$, the wheel must rotate by:
+
+$$
+\phi = \frac{d}{r}
+$$
+
+Because the encoder measures motor-shaft rotation, and the motor is connected through a gear ratio $i$:
+
+$$
+N = \frac{d}{2\pi r} \, i
+$$
+
+Convert revolutions to encoder counts:
+
+$$
+C = \frac{d}{2\pi r} \, i \, CPR
+$$
 
 > [!TIP]
 > If other quantities than the listed ones are needed.
@@ -38,6 +56,27 @@ You can use following definitions in your equation:
 - Encoder's counts per revolution: $CPR$
 
 > Write down angular motion equation(s) below. 👇
+To spin the robot by angle $\theta$, each wheel travels an arc length:
+
+$$
+s = \frac{L}{2}\theta
+$$
+
+Left and right wheel arc lengths:
+
+$$
+s_l = -\frac{L}{2}\theta, \qquad s_r = +\frac{L}{2}\theta
+$$
+
+Convert to encoder counts:
+
+$$
+C_l = -\frac{L\theta}{4\pi r} \, i \, CPR
+$$
+
+$$
+C_r = +\frac{L\theta}{4\pi r} \, i \, CPR
+$$
 
 > [!TIP]
 > You may find the calculation of arc length as illustrated below helpful.
@@ -47,7 +86,7 @@ You can use following definitions in your equation:
 ### 2. (15%) Wiring
 Please upload your wiring diagram below to illustrate how the motors are controlled and monitored. 👇
 
-![wiring](images/wiring_diagram.jpg)
+![wiring](images/wiring_schematic.jpg)
 
 ### 3. (70%) Coding
 
